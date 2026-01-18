@@ -1,0 +1,67 @@
+
+
+<!-- File for the Base template;
+inherited by each template -->
+{% load static %} <!-- load the static files right away -->
+
+
+
+
+
+
+<!DOCTYPE HTML>
+<html lang="en"> <!-- The Primary Language is set to English -->
+
+
+    <head> <!-- Head Configuration -->
+        <title> Ideaplore </title>
+        <meta charset="UTF-8">  <!-- Using the UTF-8 Encoding System -->
+
+        <!-- Load the External CSS Styles from the Static Files Directory -->
+        <link rel="stylesheet" href="{% static 'css/style.css' %}"> 
+
+        <!-- Use the Jersey 10 font from Google -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Jersey+10&family=Jersey+25&display=swap" rel="stylesheet">
+    
+        <!-- Use the Geo font from Google -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Geo:ital@0;1&display=swap" rel="stylesheet">
+    
+        <!-- Use the Jockey One font from Google -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Jockey+One&display=swap" rel="stylesheet">
+    
+    </head>
+
+
+
+
+    <body> <!-- Body Content Configuration -->
+
+        <header> <!-- Header Content Configuration -->
+            <h1><a href=""><b> Project Ideas </b></a></h1> <!-- Simple Header Created -->
+        </header>
+
+
+        <main>
+            <!-- Main Page's Content Below-->
+            {% block content %}  {% endblock content %}
+        </main>
+
+        <footer> <!-- Footer Content Configured -->
+        <!-- Ghum theke uthe lekhbo, akhon roja rakhchi, bye but sadff....> -->
+    </footer>
+    </body>
+
+    
+</html>
+
+
+
+
+
+

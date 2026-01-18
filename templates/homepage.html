@@ -1,0 +1,28 @@
+
+
+{% extends 'base.html' %} <!-- Extends the base template -->
+
+
+{% load static %} <!-- Load the static files -->
+
+
+
+<!-- HTML Template for the Homepage -->
+
+
+
+
+<!-- Main Page's Content Below --> 
+{% block content %}
+    <!-- Iterate Over Each Blog Post and show the fields needed -->
+    <div class="post-entry">
+        {% for post in posts %}
+            <h2><b><a href="">{{ post.title }}</a></b></h2>
+            <p><b><i>by {{ post.author }}</i></b></p>
+            <p>{{ post.body }}</p>
+        {% endfor %}
+    </div>
+{% endblock content %}
+
+
+

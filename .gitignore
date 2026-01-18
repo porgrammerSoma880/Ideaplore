@@ -1,0 +1,22 @@
+
+
+# The Gitignore file
+
+
+# ignore Python bytecode and caches
+__pycache__/
+*.pyc
+
+# ignore logs
+*.log
+
+# ignore environment files
+.env
+
+# ignore virtualenvs (match both .venv and walker_venv)
+*.venv/
+venv/
+
+
+
+

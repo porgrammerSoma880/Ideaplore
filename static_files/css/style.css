@@ -1,0 +1,65 @@
+
+
+/* The CSS Styles file */
+
+
+
+
+
+/* CSS Styles for the header */
+header {
+
+        background-color: #86ffe9;
+        text-align: center;
+
+       }
+
+/* Header title style */
+header h1 a b {
+
+            color: #005461;
+            font-size: 65px;
+            font-family: "Jersey 10", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+
+            }
+
+
+
+
+
+
+
+/* CSS Styles for the Homepage */
+/* Style for the Blog Post title tag*/
+.post-entry h2 b a {
+
+        font-size: 30px;
+        font-family: "Geo", sans-serif;
+        font-weight: 20;
+        font-style: normal;
+        color: #0C7779;
+
+       }
+
+/* Style for the author tag */
+.post-entry p b i {
+
+        color: #249E94;
+        font-size: 24px;
+        font-family: "Jockey One", sans-serif;
+        font-weight: 15;
+        font-style: normal;
+
+
+      }
+/* Style for the body/content tag */
+.post-entry p {
+
+    color: #023138;
+    font-size: 15px;
+    font-family: Arial;
+    font-weight: 15;
+
+  }
