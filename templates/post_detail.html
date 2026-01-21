@@ -1,0 +1,19 @@
+
+
+{% extends 'base.html' %}
+{% load static %}
+
+
+
+{% block title %} Details {% endblock title %}
+
+{% block content %}
+    <div class="post-detail">
+        <h2><b><a href="{{ post.get_absolute_url }}">{{ post.title }}</a></b></h2>
+        <p><b><i>by {{ post.author }}</i></b></p>
+        <p>{{ post.body }}</p>
+    </div>   
+{% endblock content %}
+
+
+

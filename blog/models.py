@@ -2,7 +2,7 @@ from django.db import models
 
 # Create your models here.
 
-
+from django.urls import reverse
 
 
 
@@ -44,6 +44,14 @@ class Post(models.Model):
 
 
 
+
+    def get_absolute_url(self):
+        """
+        method for getting the primary key for individual
+        blog post pages 
+        """
+
+        return reverse('post_detail_page', kwargs={"pk":self.pk})
 
 
 

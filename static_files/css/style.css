@@ -63,3 +63,47 @@ header h1 a b {
     font-weight: 15;
 
   }
+
+
+
+
+
+
+
+
+
+/* CSS Styles for the Individual Blog Pages */
+/* Style for the Blog Post title tag*/
+.post-detail h2 b a {
+
+        font-size: 30px;
+        font-family: "Geo", sans-serif;
+        font-weight: 20;
+        font-style: normal;
+        color: #0C7779;
+
+       }
+
+/* Style for the author tag */
+.post-detail b i {
+
+        color: #249E94;
+        font-size: 24px;
+        font-family: "Jockey One", sans-serif;
+        font-weight: 15;
+        font-style: normal;
+
+
+      }
+/* Style for the body/content tag */
+.post-detail p {
+
+    color: #023138;
+    font-size: 15px;
+    font-family: Arial;
+    font-weight: 15;
+
+  }
+
+
+  

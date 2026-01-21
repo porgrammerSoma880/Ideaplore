@@ -14,7 +14,7 @@ inherited by each template -->
 
 
     <head> <!-- Head Configuration -->
-        <title> Ideaplore </title>
+        <title>{% block title %} Ideaplore {% endblock title %}</title>
         <meta charset="UTF-8">  <!-- Using the UTF-8 Encoding System -->
 
         <!-- Load the External CSS Styles from the Static Files Directory -->
@@ -43,7 +43,7 @@ inherited by each template -->
     <body> <!-- Body Content Configuration -->
 
         <header> <!-- Header Content Configuration -->
-            <h1><a href=""><b> Project Ideas </b></a></h1> <!-- Simple Header Created -->
+            <h1><a href="{% url 'homepage' %}"><b> Project Ideas </b></a></h1> <!-- Simple Header Created -->
         </header>
 
 

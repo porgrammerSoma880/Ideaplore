@@ -1,21 +1,68 @@
 
 
-# The Gitignore file
 
+# ===================================== The Gitignore File =====================================
 
-# ignore Python bytecode and caches
+# =========================
+# Python
+# =========================
 __pycache__/
-*.pyc
+*.py[cod]
+*.pyo
+*.pyd
 
-# ignore logs
-*.log
-
-# ignore environment files
-.env
-
-# ignore virtualenvs (match both .venv and walker_venv)
-*.venv/
+# =========================
+# Virtual Environment
+# =========================
 venv/
+.venv/
+.env
+.env.*
+
+
+
+
+
+
+# ========
+#=================
+# Django
+# =========================
+*.log
+db.sqlite3
+media/
+staticfiles/
+
+
+
+
+
+
+# Django migrations (optional)
+# **/migrations/*.py
+# !**/migrations/__init__.py
+
+# =========================
+# OS / Editors
+# =========================
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+
+
+
+# =========================
+# Secrets
+# =========================
+*.secret
+
+
+
+
+
+
 
 
 

@@ -7,26 +7,39 @@ from django.shortcuts import render
 
 # import essentials
 from .models import Post  # to use its data in our views
+from django.views.generic import ListView, DetailView
 
 
 
 
-def homepage_view(req):
+
+class HomepageView(ListView):
     """
-    function for the homepage view
+    class for the Homepage View Listing all the
+    blog posts
     """
 
-    # get every blog post object from the model by using the all() QuerySet
-    blog_posts = Post.objects.all()
+    # specify the model
+    model = Post
 
-
-    # now render the HTTP Response, along with the HTML Template;
-    # and the extracted model data as the context variable, as follows
-    return render(req, "homepage.html", {"posts": blog_posts})
-
+    # specify the template name
+    template_name = "homepage.html"
 
 
 
 
+
+
+class PostDetailView(DetailView):
+    """
+    class for the Individual
+    Blog Post Pages
+    """
+
+    # specify the model
+    model = Post
+
+    # specify the template name
+    template_name = "post_detail.html"
 
 
